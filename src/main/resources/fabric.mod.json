@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cixxcomp",
+	"version": "${version}",
+	"name": "cixx's Complementaries",
+	"description": "Custom mod for Fat Cats",
+	"authors": [
+		"cixx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cixxcomp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cixx.comp.CixxsComplementary"
+		],
+		"client": [
+			"net.cixx.comp.CixxsComplementaryClient"
+		],
+		"fabric-datagen": [
+			"net.cixx.comp.CixxsComplementaryDataGenerator"
+		]
+	},
+	"mixins": [
+		"cixxcomp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
